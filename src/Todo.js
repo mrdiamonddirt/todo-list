@@ -8,7 +8,8 @@ export default function Todo( {todo, toggleTodo}) {
     <div>
         <label>
         <input type="checkbox" checked={todo.complete} onChange={handleTodoClick}/>
-        {todo.name}       
+        {todo.name}
+        <img alt-text='edit'></img>
         </label>
     </div>
   )
