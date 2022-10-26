@@ -42,7 +42,7 @@ function App() {
     <>
     <div className="list">
     <TodoList todos={todos} toggleTodo={toggleTodo} />
-    <input ref={todoNameRef} type="text" />
+    <input ref={todoNameRef} type="text" placeholder='Enter your Task Here'/>
     <button onClick={handleAddTodo}>Add Todo</button>
     <button onClick={handleClearTodos}>Clear Complete</button>
     <div>{todos.filter(todo => !todo.complete).length} left todo</div>
