@@ -41,11 +41,14 @@ function App() {
   return (
     <>
     <div className="list">
+      <div className='line'></div>
     <TodoList todos={todos} toggleTodo={toggleTodo} />
+    <div className='panel'>
     <input ref={todoNameRef} type="text" placeholder='Enter your Task Here'/>
-    <button onClick={handleAddTodo}>Add Todo</button>
-    <button onClick={handleClearTodos}>Clear Complete</button>
-    <div>{todos.filter(todo => !todo.complete).length} left todo</div>
+    <button onClick={handleAddTodo}><svg xmlns="http://www.w3.org/2000/svg" width={'20px'} viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> Add Todo</button>
+    <button onClick={handleClearTodos}><svg xmlns="http://www.w3.org/2000/svg" width={'20px'} viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M7 6V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h5v2h-2v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8H2V6h5zm6.414 8l1.768-1.768-1.414-1.414L12 12.586l-1.768-1.768-1.414 1.414L10.586 14l-1.768 1.768 1.414 1.414L12 15.414l1.768 1.768 1.414-1.414L13.414 14zM9 4v2h6V4H9z"></path></svg> Clear Complete</button>
+    <div className='lefttodo'>{todos.filter(todo => !todo.complete).length} left todo</div>
+    </div>
     </div>
     </>
   )
