@@ -75,7 +75,11 @@ button:hover{
     text-align: center;
 }
 .lefttodo:hover{
-    color: red;
+    background-color: white;
+    color: orange;
+    font-size: 25px;
+    font-weight: bold;
+    width: 200px;
 }
 .line{
     height: 2px;
