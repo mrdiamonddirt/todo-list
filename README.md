@@ -1,3 +1,6 @@
+# Project to show understanding of react made by Rowan Wood
+hosted on netlify to show understnding of hosting [Todo List Link](https://spiffy-trifle-f15ed2.netlify.app/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
